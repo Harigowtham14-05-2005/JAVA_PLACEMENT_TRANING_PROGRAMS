@@ -1,0 +1,266 @@
+DAY 08 PROGRAMS
+
+QUESTION 01
+Problem Statement:
+Print the elements of a matrix in spiral order starting from the top-left corner and moving right, then down, then left, then up, etc.
+Input Format:
+First line: two integers r and c (rows and columns)
+Next r lines: c space-separated integers
+Constraints:
+1 ≤ r, c ≤ 100
+-10^6 ≤ matrix elements ≤ 10^6
+Output Format:
+Space-separated elements in spiral order.
+Sample Input 1:
+3 3
+1 2 3
+4 5 6
+7 8 9
+Sample Output 1:
+1 2 3 6 9 8 7 4 5
+Sample Input 2:
+3 4
+1 2 3 4
+5 6 7 8
+9 10 11 12
+Sample Output 2:
+1 2 3 4 8 12 11 10 9 5 6 7
+
+QUESTION 02
+Problem Statement:
+Given a square matrix, rotate it 90 degrees clockwise.
+Input Format:
+First line: integer n (size of square matrix)
+Next n lines: n space-separated integers
+Constraints:
+1 ≤ n ≤ 100
+-10^6 ≤ matrix elements ≤ 10^6
+Output Format:
+The rotated matrix, each row on a new line with elements separated by spaces.
+Sample Input 1:
+3
+1 2 3
+4 5 6
+7 8 9
+Sample Output 1:
+7 4 1
+8 5 2
+9 6 3
+Sample Input 2:
+2
+1 2
+3 4
+Sample Output 2:
+3 1
+4 2
+
+QUESTION 03
+Problem Statement:
+Given a square matrix, rotate it 90 degrees anti-clockwise in‑place.
+Input Format:
+First line: integer n (size of square matrix)
+Next n lines: n space-separated integers
+Constraints:
+1 ≤ n ≤ 100
+-10^6 ≤ matrix elements ≤ 10^6
+Output Format:
+The rotated matrix, each row on a new line with elements separated by spaces.
+Sample Input 1:
+3
+1 2 3
+4 5 6
+7 8 9
+Sample Output 1:
+3 6 9
+2 5 8
+1 4 7
+Sample Input 2:
+2
+1 2
+3 4
+Sample Output 2:
+2 4
+1 3
+
+QUESTION 04
+Problem Statement:
+Given a matrix, find the element that occurs most frequently. If there is a tie, print the smaller element.
+Input Format:
+First line: two integers r and c (rows and columns)
+Next r lines: c space-separated integers
+Constraints:
+1 ≤ r, c ≤ 100
+-10^6 ≤ matrix elements ≤ 10^6
+Output Format:
+The element with the highest frequency. If multiple, the smallest among them.
+Sample Input 1:
+3 3
+1 2 3
+4 5 6
+7 8 9
+Sample Output 1:
+1
+Sample Input 2:
+2 3
+1 2 1
+2 1 2
+Sample Output 2:
+1
+
+QUESTION 05
+Problem Statement:
+Print the matrix column‑wise in a wave pattern: first column top to bottom, second column bottom to top, third column top to bottom, and so on.
+Input Format:
+First line: two integers r and c (rows and columns)
+Next r lines: c space-separated integers
+Constraints:
+1 ≤ r, c ≤ 100
+-10^6 ≤ matrix elements ≤ 10^6
+Output Format:
+Space-separated elements in column‑wise wave order.
+Sample Input 1:
+3 3
+1 2 3
+4 5 6
+7 8 9
+Sample Output 1:
+1 4 7 8 5 2 3 6 9
+Sample Input 2:
+2 4
+1 2 3 4
+5 6 7 8
+Sample Output 2:
+1 5 6 2 3 7 8 4
+
+QUESTION 06
+Problem Statement:
+Given a matrix, flip it horizontally (reflect over the vertical axis). This is also called a mirror image.
+Input Format:
+First line: two integers r and c (rows and columns)
+Next r lines: c space-separated integers
+Constraints:
+1 ≤ r, c ≤ 100
+-10^6 ≤ matrix elements ≤ 10^6
+Output Format:
+The horizontally flipped matrix, each row on a new line with elements separated by spaces.
+Sample Input 1:
+3 3
+1 2 3
+4 5 6
+7 8 9
+Sample Output 1:
+3 2 1
+6 5 4
+9 8 7
+Sample Input 2:
+2 4
+1 2 3 4
+5 6 7 8
+Sample Output 2:
+4 3 2 1
+8 7 6 5
+
+QUESTION 07
+Problem Statement:
+Shift each row of the matrix to the right by one position. The last element of each row wraps around to the first position.
+Input Format:
+First line: two integers r and c (rows and columns)
+Next r lines: c space-separated integers
+Constraints:
+1 ≤ r, c ≤ 100
+-10^6 ≤ matrix elements ≤ 10^6
+Output Format:
+The shifted matrix, each row on a new line with elements separated by spaces.
+Sample Input 1:
+3 3
+1 2 3
+4 5 6
+7 8 9
+Sample Output 1:
+3 1 2
+6 4 5
+9 7 8
+Sample Input 2:
+2 4
+1 2 3 4
+5 6 7 8
+Sample Output 2:
+4 1 2 3
+8 5 6 7
+
+QUESTION 08
+Problem Statement:
+Given a binary matrix (containing only 0s and 1s), find the side length of the largest square submatrix containing all 1s.
+Input Format:
+First line: two integers r and c (rows and columns)
+Next r lines: c space-separated integers (each 0 or 1)
+Constraints:
+1 ≤ r, c ≤ 100
+matrix elements are 0 or 1
+Output Format:
+A single integer: the side length of the largest square submatrix of 1s.
+Sample Input 1:
+4 5
+1 0 1 0 0
+1 0 1 1 1
+1 1 1 1 1
+1 0 0 1 0
+Sample Output 1:
+2
+Sample Input 2:
+3 3
+1 1 1
+1 1 1
+1 1 1
+Sample Output 2:
+3
+
+QUESTION 09
+Problem Statement:
+Print the matrix diagonally from the top-left corner to the bottom-right.
+Input Format:
+First line: two integers r and c (rows and columns)
+Next r lines: c space-separated integers
+Constraints:
+1 ≤ r, c ≤ 100
+-10^6 ≤ matrix elements ≤ 10^6
+Output Format:
+Space-separated elements in diagonal order.
+Sample Input 1:
+3 3
+1 2 3
+4 5 6
+7 8 9
+Sample Output 1:
+1 2 4 3 5 7 6 8 9
+Sample Input 2:
+2 3
+1 2 3
+4 5 6
+Sample Output 2:
+1 2 4 3 5 6
+
+QUESTION 10
+Problem Statement:
+Print the matrix in a diagonal zigzag pattern: start from top-left to bottom right.
+Input Format:
+First line: two integers r and c (rows and columns)
+Next r lines: c space-separated integers
+Constraints:
+1 ≤ r, c ≤ 100
+-10^6 ≤ matrix elements ≤ 10^6
+Output Format:
+Space-separated elements in the diagonal zigzag order.
+Sample Input 1:
+3 3
+1 2 3
+4 5 6
+7 8 9
+Sample Output 1:
+1 2 4 7 5 3 6 8 9
+Sample Input 2:
+2 3
+1 2 3
+4 5 6
+Sample Output 2:
+1 2 4 5 3 6
