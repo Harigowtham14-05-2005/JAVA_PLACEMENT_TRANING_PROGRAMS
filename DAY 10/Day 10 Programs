@@ -1,0 +1,200 @@
+DAY 10 PROGRAMS
+
+QUESTION 01
+Problem Statement:
+Given a string, replace all spaces with hyphens. Multiple spaces should be treated as separate occurrences; each space is replaced with a hyphen.
+Input Format:
+A string S
+Constraints:
+0 ≤ length(S) ≤ 1000
+Output Format:
+The string with spaces replaced by hyphens
+Sample Input 1:
+Hello World
+Sample Output 1:
+Hello-World
+Sample Input 2:
+Java   Programming
+Sample Output 2:
+Java---Programming
+
+QUESTION 02
+Problem Statement:
+Given a string and two characters, extract the substring that lies between the first occurrence of the first character and the first occurrence of the second character that appears after it. If either character is not found, output an empty string. The characters themselves are not included in the extracted substring.
+Input Format:
+First line: string S
+Second line: two characters startChar and endChar (separated by space)
+Constraints:
+0 ≤ length(S) ≤ 1000
+Output Format:
+The substring between startChar and endChar
+Sample Input 1:
+Hello [World] how are you?
+[ ]
+Sample Output 1:
+World
+Sample Input 2:
+abcdef
+c e
+Sample Output 2:
+d
+Sample Input 3:
+this is test sentence
+t s
+Sample Output 3:
+hi
+
+QUESTION 03
+Problem Statement:
+Given a string, capitalize the first letter of each word. Non‑letter characters at the beginning of a word should be ignored. the first letter should be capitalized while the rest of the word remains unchanged. If a word starts with a digit or special character, leave it as is.
+Input Format:
+A string S
+Constraints:
+0 ≤ length(S) ≤ 1000
+Output Format:
+The string with the first letter of each word capitalized
+Sample Input 1:
+hello world
+Sample Output 1:
+Hello World
+Sample Input 2:
+java programming language
+Sample Output 2:
+Java Programming Language
+
+QUESTION 04
+Problem Statement:
+Given a string, check whether it contains only digits (0‑9). If the string is empty, return false.
+Input Format:
+A string S
+Constraints:
+0 ≤ length(S) ≤ 1000
+Output Format:
+"true" if the string contains only digits, otherwise "false"
+Sample Input 1:
+12345
+Sample Output 1:
+true
+Sample Input 2:
+123a45
+Sample Output 2:
+false
+
+QUESTION 05
+Problem Statement:
+Given a string, remove all vowels. Non‑alphabetic characters remain unchanged.
+Input Format:
+A string S
+Constraints:
+0 ≤ length(S) ≤ 1000
+Output Format:
+The string with vowels removed
+Sample Input 1:
+Hello World
+Sample Output 1:
+Hll Wrld
+Sample Input 2:
+AEIOUaeiouh
+Sample Output 2:
+h
+
+QUESTION 06
+Problem Statement:
+Given a string, find the character that occurs most frequently. If there is a tie, print the character that appears first in the string. Only consider alphanumeric characters (letters and digits). Non‑alphanumeric characters are ignored. If no alphanumeric character exists, output "None".
+Input Format:
+A string S
+Constraints:
+0 ≤ length(S) ≤ 1000
+Output Format:
+The most frequent character, or "None"
+Sample Input 1:
+hello world
+Sample Output 1:
+l
+Sample Input 2:
+abarcadabea
+Sample Output 2:
+a
+Sample Input 3:
+!@#$%
+Sample Output 3:
+None
+
+QUESTION 07
+Problem Statement:
+Given a string and an integer K, rotate the string left by K positions. 
+Input Format:
+First line: string S
+Second line: integer K
+Constraints:
+0 ≤ length(S) ≤ 1000
+0 ≤ K ≤ 10^6
+Output Format:
+The rotated string
+Sample Input 1:
+abcdef
+2
+Sample Output 1:
+cdefab
+Sample Input 2:
+hello
+7
+Sample Output 2:
+lohel
+
+QUESTION 08
+Problem Statement:
+Given two strings, check if the first string is a substring of the second string. Output "true" if it is, otherwise "false". Case‑sensitive.
+Input Format:
+First line: string S (the potential substring)
+Second line: string T (the larger string)
+Constraints:
+0 ≤ length(S), length(T) ≤ 1000
+Output Format:
+"true" or "false"
+Sample Input 1:
+world
+hello world
+Sample Output 1:
+true
+Sample Input 2:
+Java
+Python
+Sample Output 2:
+false
+
+QUESTION 09
+Problem Statement:
+Given a string, perform run‑length encoding: compress consecutive duplicate characters by writing the character followed by the count. For example, "aaabbc" becomes "a3b2c1". If a character appears only once, still write it with count 1.
+Input Format:
+A string S
+Constraints:
+0 ≤ length(S) ≤ 1000
+Output Format:
+The run‑length encoded string
+Sample Input 1:
+aaabbc
+Sample Output 1:
+a3b2c1
+Sample Input 2:
+abcd
+Sample Output 2:
+a1b1c1d1
+
+QUESTION 10
+Problem Statement:
+Given a string, validate whether it is a simple email address. A valid email should contain exactly one '@' symbol, at least one '.' after the '@', and both the local part and domain part must contain at least one character. No spaces allowed. This is a simplified validation.
+Input Format:
+A string S
+Constraints:
+0 ≤ length(S) ≤ 100
+Output Format:
+"Valid" if the email is valid according to the simple rules, otherwise "Invalid"
+Sample Input 1:
+user@example.com
+Sample Output 1:
+Valid
+Sample Input 2:
+user@domain
+Sample Output 2:
+Invalid
